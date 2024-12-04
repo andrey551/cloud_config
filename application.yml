@@ -11,3 +11,9 @@ spring:
   flyway:
     enabled: true
 message: Hello from github
+eureka:
+  client:
+    service-url:
+      default: [http://localhost:8888/]
+    registerWithEureka: false
+    fetchRegistry: false
