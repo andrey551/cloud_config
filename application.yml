@@ -10,3 +10,4 @@ spring:
     show-sql: false
   flyway:
     enabled: true
+message: Hello from github
