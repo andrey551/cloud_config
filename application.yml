@@ -1,19 +1,2 @@
-spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: validate
-    properties:
-      hibernate:
-        format_sql: true
-    show-sql: false
-  flyway:
-    enabled: true
 message: Hello from github
-eureka:
-  client:
-    service-url:
-      default: [http://localhost:8888/]
-    registerWithEureka: false
-    fetchRegistry: false
+
