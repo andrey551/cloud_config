@@ -1,2 +1,24 @@
 message: Hello from github
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://192.168.2.134:8761/eureka/
+  instance:
+    non-secure-port: 8083
+    preferIpAddress: true
+    ip-address: 192.168.2.134
+    status-page-url: http://192.168.2.134:8083/actuator/info
+    health-check-url: http://192.168.2.134:8083/actuator/health
+
+logging:
+  level:
+    com.netflix.discovery: DEBUG
+    org.springframework.cloud.netflix.eureka: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
 
