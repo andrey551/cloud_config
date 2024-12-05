@@ -4,13 +4,13 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://192.168.2.134:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     non-secure-port: 8083
-    preferIpAddress: true
-    ip-address: 192.168.2.134
-    status-page-url: http://192.168.2.134:8083/actuator/info
-    health-check-url: http://192.168.2.134:8083/actuator/health
+    # preferIpAddress: true
+    # ip-address: 192.168.2.134
+    # status-page-url: http://192.168.2.134:8083/actuator/info
+    # health-check-url: http://192.168.2.134:8083/actuator/health
 
 logging:
   level:
