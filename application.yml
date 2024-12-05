@@ -7,8 +7,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     non-secure-port: 8083
-    # preferIpAddress: true
-    # ip-address: 192.168.2.134
+    preferIpAddress: true
+    ip-address: 127.0.0.1
     # status-page-url: http://192.168.2.134:8083/actuator/info
     # health-check-url: http://192.168.2.134:8083/actuator/health
 
